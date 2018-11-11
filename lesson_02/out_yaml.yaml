@@ -1,0 +1,8 @@
+first_key:
+- item_id
+- item_desc
+- base_price
+second_key: 123
+third_key:
+  price_euro: 100€
+  price_rub: 69000₽
