@@ -1,0 +1,39 @@
+2018-11-18 19:12:29,172 DEBUG  client(122)log.client_log_config 'Parameters - addr: ('localhost', 7777), message buffer: 1024'
+2018-11-18 19:12:29,176 ERROR  client(128)log.client_log_config 'Can't connect. Connection refused'
+Traceback (most recent call last):
+  File "/Users/kirillpoznyakov/Yandex.Disk.localized/python/python_level_2/py_lvl2_hw_local/lesson_03/client.py", line 126, in <module>
+    client_socket.connect(ADDR)
+ConnectionRefusedError: [Errno 61] Connection refused
+2018-11-18 19:13:23,082 DEBUG  client(122)log.client_log_config 'Parameters - addr: ('localhost', 7777), message buffer: 1024, username_2018-11-18 19:13:23:None'
+2018-11-18 19:13:23,084 ERROR  client(128)log.client_log_config 'Can't connect. Connection refused'
+Traceback (most recent call last):
+  File "/Users/kirillpoznyakov/Yandex.Disk.localized/python/python_level_2/py_lvl2_hw_local/lesson_03/client.py", line 126, in <module>
+    client_socket.connect(ADDR)
+ConnectionRefusedError: [Errno 61] Connection refused
+2018-11-18 19:13:56,563 DEBUG  client(121)log.client_log_config 'Parameters - addr: ('localhost', 7777), message buffer: 1024, username_2018-11-18 19:13:56:None'
+2018-11-18 19:13:56,565 INFO   client(133)log.client_log_config 'Connected to localhost:7777 as username_2018-11-18 19:13:56'
+2018-11-18 19:13:56,565 INFO   client(68)log.client_log_config 'Data to send: {'action': 'presence', 'time': '2018-11-18 19:13:56', 'type': 'status', 'user': {'account_name': 'username_2018-11-18 19:13:56', 'status': 'OK'}}'
+2018-11-18 19:13:56,565 DEBUG  client(76)log.client_log_config 'Message: {'response': 200}'
+2018-11-18 19:14:00,761 DEBUG  client(121)log.client_log_config 'Parameters - addr: ('localhost', 7777), message buffer: 1024, username_2018-11-18 19:14:00:None'
+2018-11-18 19:14:00,764 INFO   client(133)log.client_log_config 'Connected to localhost:7777 as username_2018-11-18 19:14:00'
+2018-11-18 19:14:00,764 INFO   client(68)log.client_log_config 'Data to send: {'action': 'presence', 'time': '2018-11-18 19:14:00', 'type': 'status', 'user': {'account_name': 'username_2018-11-18 19:14:00', 'status': 'OK'}}'
+2018-11-18 19:14:00,764 DEBUG  client(76)log.client_log_config 'Message: {'info': 'connect', 'name': 'username_2018-11-18 19:14:00'}'
+2018-11-18 19:14:00,764 DEBUG  client(90)log.client_log_config 'KeyError in parse_msg() with message: {'info': 'connect', 'name': 'username_2018-11-18 19:14:00'}'
+2018-11-18 19:14:00,764 DEBUG  client(76)log.client_log_config 'Message: {'response': 200}'
+2018-11-18 19:14:02,618 DEBUG  client(111)log.client_log_config 'User message: asdasd'
+2018-11-18 19:14:02,618 INFO   client(68)log.client_log_config 'Data to send: {'action': 'msg', 'time': '2018-11-18 19:14:02', 'user': {'account_name': 'username_2018-11-18 19:14:00', 'msg': 'asdasd'}}'
+2018-11-18 19:14:02,619 DEBUG  client(76)log.client_log_config 'Message: {'info': 'message', 'message': 'asdasd', 'from': 'username_2018-11-18 19:14:00'}'
+2018-11-18 19:14:02,619 DEBUG  client(90)log.client_log_config 'KeyError in parse_msg() with message: {'info': 'message', 'message': 'asdasd', 'from': 'username_2018-11-18 19:14:00'}'
+2018-11-18 19:14:02,619 DEBUG  client(76)log.client_log_config 'Message: {'response': 200}'
+2018-11-18 19:14:17,143 DEBUG  client(76)log.client_log_config 'Message: {'info': 'disconnect', 'name': 'username_2018-11-18 19:14:00'}'
+2018-11-18 19:14:17,142 ERROR  client(80)log.client_log_config 'OSError in get_data'
+Traceback (most recent call last):
+  File "/Users/kirillpoznyakov/Yandex.Disk.localized/python/python_level_2/py_lvl2_hw_local/lesson_03/client.py", line 75, in get_data
+    msg = decode_msg(client_socket.recv(BUFSIZ))
+OSError: [Errno 9] Bad file descriptor
+2018-11-18 19:14:17,143 DEBUG  client(90)log.client_log_config 'KeyError in parse_msg() with message: {'info': 'disconnect', 'name': 'username_2018-11-18 19:14:00'}'
+2018-11-18 19:14:20,980 ERROR  client(80)log.client_log_config 'OSError in get_data'
+Traceback (most recent call last):
+  File "/Users/kirillpoznyakov/Yandex.Disk.localized/python/python_level_2/py_lvl2_hw_local/lesson_03/client.py", line 75, in get_data
+    msg = decode_msg(client_socket.recv(BUFSIZ))
+OSError: [Errno 9] Bad file descriptor
