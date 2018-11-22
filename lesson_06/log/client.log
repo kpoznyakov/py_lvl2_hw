@@ -1,0 +1,79 @@
+2018-11-21 23:52:40,903 INFO   client(164)log.client_log_config 'Parameters - addr: ('localhost', 7777), message buffer: 1024, A frightening zombie:None'
+2018-11-21 23:52:40,904 DEBUG  client(38)log.client_log_config 'Func "get_data" got "()", "{}"'
+2018-11-21 23:52:40,905 INFO   client(176)log.client_log_config 'Connected to localhost:7777 as A frightening zombie'
+2018-11-21 23:52:40,905 DEBUG  client(38)log.client_log_config 'Func "presence" got "('A frightening zombie',)", "{}"'
+2018-11-21 23:52:40,905 DEBUG  client(38)log.client_log_config 'Func "get_current_time" got "()", "{}"'
+2018-11-21 23:52:40,905 DEBUG  client(38)log.client_log_config 'Func "send_data" got "({'action': 'presence', 'time': '2018-11-21 23:52:40', 'type': 'status', 'user': {'account_name': 'A frightening zombie', 'status': 'OK'}},)", "{}"'
+2018-11-21 23:52:40,905 INFO   client(107)log.client_log_config 'Data to send: {'action': 'presence', 'time': '2018-11-21 23:52:40', 'type': 'status', 'user': {'account_name': 'A frightening zombie', 'status': 'OK'}}'
+2018-11-21 23:52:40,905 DEBUG  client(38)log.client_log_config 'Func "encode_msg" got "({'action': 'presence', 'time': '2018-11-21 23:52:40', 'type': 'status', 'user': {'account_name': 'A frightening zombie', 'status': 'OK'}},)", "{}"'
+2018-11-21 23:52:40,905 DEBUG  client(38)log.client_log_config 'Func "text_message" got "()", "{}"'
+2018-11-21 23:52:40,907 DEBUG  client(38)log.client_log_config 'Func "decode_msg" got "(b'{"response": 200}',)", "{}"'
+2018-11-21 23:52:40,907 DEBUG  client(38)log.client_log_config 'Func "parse_msg" got "({'response': 200},)", "{}"'
+2018-11-21 23:52:40,907 ERROR  client(139)log.client_log_config 'KeyError in parse_msg() with message: {'response': 200}'
+Traceback (most recent call last):
+  File "client.py", line 130, in parse_msg
+    if msg['info'] == 'connect':
+KeyError: 'info'
+2018-11-21 23:52:51,015 INFO   client(164)log.client_log_config 'Parameters - addr: ('localhost', 7777), message buffer: 1024, Joe, the monster guy:None'
+2018-11-21 23:52:51,017 INFO   client(176)log.client_log_config 'Connected to localhost:7777 as Joe, the monster guy'
+2018-11-21 23:52:51,017 INFO   client(107)log.client_log_config 'Data to send: {'action': 'presence', 'time': '2018-11-21 23:52:51', 'type': 'status', 'user': {'account_name': 'Joe, the monster guy', 'status': 'OK'}}'
+2018-11-21 23:52:51,020 DEBUG  client(38)log.client_log_config 'Func "decode_msg" got "(b'{"info": "connect", "name": "Joe, the monster guy"}',)", "{}"'
+2018-11-21 23:52:51,020 DEBUG  client(38)log.client_log_config 'Func "parse_msg" got "({'info': 'connect', 'name': 'Joe, the monster guy'},)", "{}"'
+2018-11-21 23:52:51,020 ERROR  client(139)log.client_log_config 'KeyError in parse_msg() with message: {'info': 'connect', 'name': 'Joe, the monster guy'}'
+Traceback (most recent call last):
+  File "client.py", line 136, in parse_msg
+    if msg['response'] == 200:  # TODO check message delivery
+KeyError: 'response'
+2018-11-21 23:52:51,021 ERROR  client(139)log.client_log_config 'KeyError in parse_msg() with message: {'response': 200}'
+Traceback (most recent call last):
+  File "/Users/kirillpoznyakov/Yandex.Disk.localized/python/python_level_2/py_lvl2_hw_local/lesson_03/client.py", line 130, in parse_msg
+    if msg['info'] == 'connect':
+KeyError: 'info'
+2018-11-21 23:52:54,086 INFO   client(107)log.client_log_config 'Data to send: {'action': 'msg', 'time': '2018-11-21 23:52:54', 'user': {'account_name': 'Joe, the monster guy', 'msg': 'Hello!'}}'
+2018-11-21 23:52:54,092 DEBUG  client(38)log.client_log_config 'Func "decode_msg" got "(b'{"info": "message", "message": "Hello!", "from": "Joe, the monster guy"}',)", "{}"'
+2018-11-21 23:52:54,093 DEBUG  client(38)log.client_log_config 'Func "parse_msg" got "({'info': 'message', 'message': 'Hello!', 'from': 'Joe, the monster guy'},)", "{}"'
+2018-11-21 23:52:54,093 ERROR  client(139)log.client_log_config 'KeyError in parse_msg() with message: {'info': 'message', 'message': 'Hello!', 'from': 'Joe, the monster guy'}'
+Traceback (most recent call last):
+  File "client.py", line 136, in parse_msg
+    if msg['response'] == 200:  # TODO check message delivery
+KeyError: 'response'
+2018-11-21 23:52:54,094 ERROR  client(139)log.client_log_config 'KeyError in parse_msg() with message: {'response': 200}'
+Traceback (most recent call last):
+  File "/Users/kirillpoznyakov/Yandex.Disk.localized/python/python_level_2/py_lvl2_hw_local/lesson_03/client.py", line 130, in parse_msg
+    if msg['info'] == 'connect':
+KeyError: 'info'
+2018-11-21 23:52:57,070 DEBUG  client(38)log.client_log_config 'Func "message" got "('Hi',)", "{}"'
+2018-11-21 23:52:57,070 DEBUG  client(38)log.client_log_config 'Func "get_current_time" got "()", "{}"'
+2018-11-21 23:52:57,070 DEBUG  client(38)log.client_log_config 'Func "send_data" got "({'action': 'msg', 'time': '2018-11-21 23:52:57', 'user': {'account_name': 'A frightening zombie', 'msg': 'Hi'}},)", "{}"'
+2018-11-21 23:52:57,070 INFO   client(107)log.client_log_config 'Data to send: {'action': 'msg', 'time': '2018-11-21 23:52:57', 'user': {'account_name': 'A frightening zombie', 'msg': 'Hi'}}'
+2018-11-21 23:52:57,071 DEBUG  client(38)log.client_log_config 'Func "encode_msg" got "({'action': 'msg', 'time': '2018-11-21 23:52:57', 'user': {'account_name': 'A frightening zombie', 'msg': 'Hi'}},)", "{}"'
+2018-11-21 23:52:57,071 DEBUG  client(38)log.client_log_config 'Func "text_message" got "()", "{}"'
+2018-11-21 23:52:57,075 DEBUG  client(38)log.client_log_config 'Func "decode_msg" got "(b'{"response": 200}',)", "{}"'
+2018-11-21 23:52:57,075 DEBUG  client(38)log.client_log_config 'Func "parse_msg" got "({'response': 200},)", "{}"'
+2018-11-21 23:52:57,075 ERROR  client(139)log.client_log_config 'KeyError in parse_msg() with message: {'response': 200}'
+Traceback (most recent call last):
+  File "client.py", line 130, in parse_msg
+    if msg['info'] == 'connect':
+KeyError: 'info'
+2018-11-21 23:52:57,076 ERROR  client(139)log.client_log_config 'KeyError in parse_msg() with message: {'info': 'message', 'message': 'Hi', 'from': 'A frightening zombie'}'
+Traceback (most recent call last):
+  File "/Users/kirillpoznyakov/Yandex.Disk.localized/python/python_level_2/py_lvl2_hw_local/lesson_03/client.py", line 136, in parse_msg
+    if msg['response'] == 200:  # TODO check message delivery
+KeyError: 'response'
+2018-11-21 23:53:01,570 ERROR  client(122)log.client_log_config 'OSError in get_data'
+Traceback (most recent call last):
+  File "/Users/kirillpoznyakov/Yandex.Disk.localized/python/python_level_2/py_lvl2_hw_local/lesson_03/client.py", line 118, in get_data
+    msg = decode_msg(client_socket.recv(BUFSIZ))
+OSError: [Errno 9] Bad file descriptor
+2018-11-21 23:53:01,573 DEBUG  client(38)log.client_log_config 'Func "decode_msg" got "(b'{"info": "disconnect", "name": "Joe, the monster guy"}',)", "{}"'
+2018-11-21 23:53:01,573 DEBUG  client(38)log.client_log_config 'Func "parse_msg" got "({'info': 'disconnect', 'name': 'Joe, the monster guy'},)", "{}"'
+2018-11-21 23:53:01,573 ERROR  client(139)log.client_log_config 'KeyError in parse_msg() with message: {'info': 'disconnect', 'name': 'Joe, the monster guy'}'
+Traceback (most recent call last):
+  File "client.py", line 136, in parse_msg
+    if msg['response'] == 200:  # TODO check message delivery
+KeyError: 'response'
+2018-11-21 23:53:06,800 ERROR  client(122)log.client_log_config 'OSError in get_data'
+Traceback (most recent call last):
+  File "client.py", line 118, in get_data
+    msg = decode_msg(client_socket.recv(BUFSIZ))
+OSError: [Errno 9] Bad file descriptor
