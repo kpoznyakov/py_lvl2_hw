@@ -1,0 +1,39 @@
+2018-11-25 17:08:29,135 INFO   client(164)log.client_log_config 'Parameters - addr: ('localhost', 7777), message buffer: 1024, Sam, the cookie:None'
+2018-11-25 17:08:29,136 INFO   client(176)log.client_log_config 'Connected to localhost:7777 as Sam, the cookie'
+2018-11-25 17:08:29,137 INFO   client(107)log.client_log_config 'Data to send: {'action': 'presence', 'time': '2018-11-25 17:08:29', 'type': 'status', 'user': {'account_name': 'Sam, the cookie', 'status': 'OK'}}'
+2018-11-25 17:08:30,493 INFO   client(164)log.client_log_config 'Parameters - addr: ('localhost', 7777), message buffer: 1024, Undead guy of doom:None'
+2018-11-25 17:08:30,494 INFO   client(176)log.client_log_config 'Connected to localhost:7777 as Undead guy of doom'
+2018-11-25 17:08:30,494 INFO   client(107)log.client_log_config 'Data to send: {'action': 'presence', 'time': '2018-11-25 17:08:30', 'type': 'status', 'user': {'account_name': 'Undead guy of doom', 'status': 'OK'}}'
+2018-11-25 17:08:30,701 ERROR  client(139)log.client_log_config 'KeyError in parse_msg() with message: {'action': 'presence', 'time': '2018-11-25 17:08:30', 'type': 'status', 'user': {'account_name': 'Undead guy of doom', 'status': 'OK'}}'
+Traceback (most recent call last):
+  File "/Users/kirillpoznyakov/Yandex.Disk.localized/python/python_level_2/py_lvl2_hw_local/lesson_07/client.py", line 135, in parse_msg
+    if msg['info'] == 'disconnect':
+KeyError: 'info'
+2018-11-25 17:08:46,186 INFO   client(164)log.client_log_config 'Parameters - addr: ('localhost', 7777), message buffer: 1024, A frightening ninja:None'
+2018-11-25 17:08:46,187 INFO   client(176)log.client_log_config 'Connected to localhost:7777 as A frightening ninja'
+2018-11-25 17:08:46,187 INFO   client(107)log.client_log_config 'Data to send: {'action': 'presence', 'time': '2018-11-25 17:08:46', 'type': 'status', 'user': {'account_name': 'A frightening ninja', 'status': 'OK'}}'
+2018-11-25 17:08:46,394 ERROR  client(139)log.client_log_config 'KeyError in parse_msg() with message: {'action': 'presence', 'time': '2018-11-25 17:08:46', 'type': 'status', 'user': {'account_name': 'A frightening ninja', 'status': 'OK'}}'
+Traceback (most recent call last):
+  File "/Users/kirillpoznyakov/Yandex.Disk.localized/python/python_level_2/py_lvl2_hw_local/lesson_07/client.py", line 135, in parse_msg
+    if msg['info'] == 'disconnect':
+KeyError: 'info'
+2018-11-25 17:08:46,395 ERROR  client(139)log.client_log_config 'KeyError in parse_msg() with message: {'action': 'presence', 'time': '2018-11-25 17:08:46', 'type': 'status', 'user': {'account_name': 'A frightening ninja', 'status': 'OK'}}'
+Traceback (most recent call last):
+  File "/Users/kirillpoznyakov/Yandex.Disk.localized/python/python_level_2/py_lvl2_hw_local/lesson_07/client.py", line 135, in parse_msg
+    if msg['info'] == 'disconnect':
+KeyError: 'info'
+2018-11-25 17:08:52,483 ERROR  client(122)log.client_log_config 'OSError in get_data'
+Traceback (most recent call last):
+  File "/Users/kirillpoznyakov/Yandex.Disk.localized/python/python_level_2/py_lvl2_hw_local/lesson_07/client.py", line 118, in get_data
+    msg = decode_msg(client_socket.recv(BUFSIZ))
+OSError: [Errno 9] Bad file descriptor
+2018-11-25 17:08:56,137 ERROR  client(122)log.client_log_config 'OSError in get_data'
+Traceback (most recent call last):
+  File "/Users/kirillpoznyakov/Yandex.Disk.localized/python/python_level_2/py_lvl2_hw_local/lesson_07/client.py", line 118, in get_data
+    msg = decode_msg(client_socket.recv(BUFSIZ))
+OSError: [Errno 9] Bad file descriptor
+2018-11-25 17:08:57,631 ERROR  client(122)log.client_log_config 'OSError in get_data'
+Traceback (most recent call last):
+  File "/Users/kirillpoznyakov/Yandex.Disk.localized/python/python_level_2/py_lvl2_hw_local/lesson_07/client.py", line 118, in get_data
+    msg = decode_msg(client_socket.recv(BUFSIZ))
+OSError: [Errno 9] Bad file descriptor
